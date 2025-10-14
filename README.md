@@ -40,3 +40,41 @@ GHCi, version 9.4.7: https://www.haskell.org/ghc/  :? for help
 То включва много полезни функционалности - често срещани неща като "форматирай", "отиди на дефиниция", "какъв е типът на това", "оцени израз" и т.н.
 
 Важно е да се отбележи, че докато работим с файл извън "проект" (което ще правим повечето време), е **нужно** да имаме инсталирано `ghc` и да е в `PATH`, за да работи HLS
+
+### Допълнителни разширения за VSCode
+
+[Haskell Runner 2](https://marketplace.visualstudio.com/items?itemName=Meowcolm024.runner2) - Load GHCI бутон
+[haskell-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter)
+[Haskell Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=justusadam.language-haskell)
+
+[Reload](https://marketplace.visualstudio.com/items?itemName=natqe.reload) - (unrelated) Добавя бутон, който ви reload-ва VSCode вместо да го затваряте и отваряте
+
+## Haskell ресурси (крадено от Павел Атанасов)
+
+* [курс](https://github.com/bobatkey/CS316-2022)
+* [Книгата](http://www.cs.nott.ac.uk/~pszgmh/pih.html) на която е базиран горният курс.
+* [Силно препоръчително четиво][parse-dont-validate] свързано с
+  * как да ни се налага да мислим по-малко докато програмираме
+  * как да избягваме големи класове грешки с помощта на компилатора
+  * ключова начин на мислене в Haskell
+  * защо да програмираме на Haskell
+* [Hoogle](https://hoogle.haskell.org/) - търсене за хаскел функции (идентификатори) (и по типове!)
+* [Hackage](http://hackage.haskell.org/) - търсене за хаскел пакети
+* [Real World Haskell](http://book.realworldhaskell.org/) - практично насочена
+
+  Малко остаряла.
+
+* Специализирани ресурси:
+
+  * защо да правим `a -> Maybe b`, вместо `a -> Bool`:
+    * [Parse, don't validate][parse-dont-validate]
+    * https://runtimeverification.com/blog/code-smell-boolean-blindness/
+    * https://existentialtype.wordpress.com/2011/03/15/boolean-blindness/
+  * Програмиране с типове - [Thinking with Types](https://thinkingwithtypes.com/)
+  * Паралелно и конкуретно програмиране - [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
+    * една от въведителните части е доста добра за добиване на по-добро разбиране над оценителния модел на Haskell
+  * Разглеждане на фундаментални типови класове - [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
+  * Разглеждане на различни интересни библиотеки/разшиерния на езика - [24 days of \*](https://ocharles.org.uk/)
+
+
+[parse-dont-validate]: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
