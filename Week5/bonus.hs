@@ -10,8 +10,6 @@
 -- use all your pattern matches!
 {-# OPTIONS_GHC -fwarn-unused-matches #-}
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
-{-# HLINT ignore "Use any" #-}
-{-# HLINT ignore "Use map" #-}
 
 -- Задача 1: Да се дефинират типове Suit и Rank
 -- Задача 2: Да се дефинира тип Card, който има следните полета: rank :: Rank, suit :: Suit
