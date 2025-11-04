@@ -11,7 +11,9 @@
 {-# OPTIONS_GHC -fwarn-unused-matches #-}
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 import Prelude hiding (words)
-import Distribution.Simple.Command (OptDescr(BoolOpt))
+import Text.Read (readMaybe) 
+
+---- !! Имате право на пищов за контролното !!
 
 -- Задача 1: Да се напише map (\x -> x * x) [1..5], изпозлвайки list comprehension
 -- Задача 2: Да се напише filter even [1..10], изпозлвайки list comprehension
@@ -44,4 +46,14 @@ manyNums = [["1", "10", "5", "2"], ["1", "2", "5", "2"], ["1", "10", "15", "2"]]
 toParse :: [String]
 toParse = ["user=bob", "age=20", "active=True"]
 -- Oчакван резултат: ("bob", 20, True)
+
+-- Бонус: Да се пренапише задача 10, използвайки record
+data User = User { name :: String, age :: Int, active :: Bool }
+    deriving (Show)
+
+-- Бонус2: Използвайки readMaybe да се напише функция, която създава User от следните списъци: (name винаги е на първа позиция)
+toParse2 :: [String]
+toParse2 = ["bob", "20", "True"]
+toParse3 :: [String]
+toParse3 = ["bob", "True", "20"]
 
