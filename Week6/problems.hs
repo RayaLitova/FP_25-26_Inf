@@ -84,6 +84,7 @@ readNAndSum = do
     helper $ read n
     where
         helper :: Int -> IO Int
+        helper 0 = pure 0
         helper n = do
             x <- getLine
             y <- helper (n-1)
